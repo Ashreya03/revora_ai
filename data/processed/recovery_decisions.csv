@@ -1,0 +1,421 @@
+payment_id,account_id,amount,payment_status,failure_reason,attempts_used,recovery_action,recovery_status,recovered_amount,next_step
+P-00001,A-43a9e3,10004.0,successful,,0,No action,not_required,0.0,No action
+P-00002,A-0a282f,1194.0,successful,,0,No action,not_required,0.0,No action
+P-00003,A-1f0ac7,7491.0,successful,,0,No action,not_required,0.0,No action
+P-00004,A-1b9609,16614.0,successful,,0,No action,not_required,0.0,No action
+P-00005,A-a0ca4e,10920.0,failed,insufficient_funds,1,Retry later,recovered,10920.0,Recovered - stop
+P-00006,A-e5d6ab,10815.0,failed,network_error,1,Smart retry,recovered,10815.0,Recovered - stop
+P-00007,A-7dacce,4975.0,successful,,0,No action,not_required,0.0,No action
+P-00008,A-10b8da,5404.0,successful,,0,No action,not_required,0.0,No action
+P-00009,A-592832,12605.0,failed,network_error,2,Payment link,recovered,12605.0,Recovered - stop
+P-00010,A-6c093d,15728.0,successful,,0,No action,not_required,0.0,No action
+P-00011,A-462d45,17282.0,failed,insufficient_funds,1,Retry later,recovered,17282.0,Recovered - stop
+P-00012,A-ac14bb,27347.0,failed,card_declined,1,Payment link,recovered,27347.0,Recovered - stop
+P-00013,A-ce66f8,11858.0,successful,,0,No action,not_required,0.0,No action
+P-00014,A-c4ea60,6600.0,successful,,0,No action,not_required,0.0,No action
+P-00015,A-832ec2,4921.0,successful,,0,No action,not_required,0.0,No action
+P-00016,A-684255,9744.0,successful,,0,No action,not_required,0.0,No action
+P-00017,A-c42f1f,539.0,failed,insufficient_funds,2,Payment link,recovered,539.0,Recovered - stop
+P-00018,A-4e44e8,1874.0,failed,card_declined,2,Customer outreach,recovered,1874.0,Recovered - stop
+P-00019,A-30b4ca,74304.0,successful,,0,No action,not_required,0.0,No action
+P-00020,A-32fb14,3601.0,failed,card_declined,1,Payment link,recovered,3601.0,Recovered - stop
+P-00021,A-00cac8,9210.0,successful,,0,No action,not_required,0.0,No action
+P-00022,A-35083d,20820.0,failed,expired_card,1,Payment link,recovered,20820.0,Recovered - stop
+P-00023,A-eb7fac,41259.0,failed,insufficient_funds,1,Retry later,recovered,41259.0,Recovered - stop
+P-00024,A-b20d99,7089.0,successful,,0,No action,not_required,0.0,No action
+P-00025,A-45ce7a,4248.0,successful,,0,No action,not_required,0.0,No action
+P-00026,A-08e34e,10422.0,successful,,0,No action,not_required,0.0,No action
+P-00027,A-8145a0,12000.0,successful,,0,No action,not_required,0.0,No action
+P-00028,A-bad8c1,7797.0,failed,expired_card,1,Payment link,recovered,7797.0,Recovered - stop
+P-00029,A-44dc83,456.0,successful,,0,No action,not_required,0.0,No action
+P-00030,A-f446b6,11392.0,failed,card_declined,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00031,A-a45270,16601.0,failed,network_error,1,Priority customer outreach,recovered,16601.0,Recovered - stop
+P-00032,A-05f0e5,45082.0,successful,,0,No action,not_required,0.0,No action
+P-00033,A-9077b0,38.0,successful,,0,No action,not_required,0.0,No action
+P-00034,A-7f8241,32104.0,successful,,0,No action,not_required,0.0,No action
+P-00035,A-2bc93d,30413.0,successful,,0,No action,not_required,0.0,No action
+P-00036,A-f3ff05,8973.0,successful,,0,No action,not_required,0.0,No action
+P-00037,A-2d4502,15481.0,failed,network_error,1,Smart retry,recovered,15481.0,Recovered - stop
+P-00038,A-6a4e2d,9708.0,successful,,0,No action,not_required,0.0,No action
+P-00039,A-eb7c38,29666.0,successful,,0,No action,not_required,0.0,No action
+P-00040,A-3b5cd1,10542.0,successful,,0,No action,not_required,0.0,No action
+P-00041,A-b2225d,15745.0,successful,,0,No action,not_required,0.0,No action
+P-00042,A-94f8c9,12391.0,successful,,0,No action,not_required,0.0,No action
+P-00043,A-02fac6,20954.0,failed,insufficient_funds,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00044,A-c1dfe1,25296.0,failed,card_declined,1,Payment link,recovered,25296.0,Recovered - stop
+P-00045,A-32728c,4118.0,successful,,0,No action,not_required,0.0,No action
+P-00046,A-4c38bc,29520.0,failed,bank_error,1,Smart retry,recovered,29520.0,Recovered - stop
+P-00047,A-1b707d,7945.0,successful,,0,No action,not_required,0.0,No action
+P-00048,A-6f8ad2,20619.0,failed,card_declined,1,Payment link,recovered,20619.0,Recovered - stop
+P-00049,A-4d1e75,13698.0,failed,bank_error,1,Smart retry,recovered,13698.0,Recovered - stop
+P-00050,A-9ee962,9249.0,failed,network_error,3,Final recovery attempt,recovered,9249.0,Recovered - stop
+P-00051,A-378b99,2223.0,successful,,0,No action,not_required,0.0,No action
+P-00052,A-94d3da,19885.0,successful,,0,No action,not_required,0.0,No action
+P-00053,A-e351e1,627.0,failed,bank_error,1,Smart retry,recovered,627.0,Recovered - stop
+P-00054,A-9badbd,13796.0,successful,,0,No action,not_required,0.0,No action
+P-00055,A-7e0a10,27186.0,successful,,0,No action,not_required,0.0,No action
+P-00056,A-526d93,29827.0,successful,,0,No action,not_required,0.0,No action
+P-00057,A-f92792,17262.0,failed,card_declined,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00058,A-84ebe4,20830.0,failed,network_error,2,Payment link,recovered,20830.0,Recovered - stop
+P-00059,A-5b4ebb,2337.0,successful,,0,No action,not_required,0.0,No action
+P-00060,A-9b9fe9,3690.0,successful,,0,No action,not_required,0.0,No action
+P-00061,A-a8b49c,6846.0,failed,card_declined,1,Payment link,recovered,6846.0,Recovered - stop
+P-00062,A-a1bbb6,14157.0,successful,,0,No action,not_required,0.0,No action
+P-00063,A-c45b23,2854.0,successful,,0,No action,not_required,0.0,No action
+P-00064,A-02cd81,28644.0,successful,,0,No action,not_required,0.0,No action
+P-00065,A-ee42db,10997.0,successful,,0,No action,not_required,0.0,No action
+P-00066,A-432483,23412.0,successful,,0,No action,not_required,0.0,No action
+P-00067,A-9208f0,3413.0,failed,bank_error,1,Smart retry,recovered,3413.0,Recovered - stop
+P-00068,A-98a59a,33712.0,successful,,0,No action,not_required,0.0,No action
+P-00069,A-fe79a5,8159.0,successful,,0,No action,not_required,0.0,No action
+P-00070,A-726cfa,20785.0,successful,,0,No action,not_required,0.0,No action
+P-00071,A-271f46,9728.0,successful,,0,No action,not_required,0.0,No action
+P-00072,A-157070,18700.0,successful,,0,No action,not_required,0.0,No action
+P-00073,A-40a557,15388.0,successful,,0,No action,not_required,0.0,No action
+P-00074,A-91e948,13735.0,failed,insufficient_funds,3,Final recovery attempt,recovered,13735.0,Recovered - stop
+P-00075,A-104f1a,7987.0,failed,expired_card,2,Customer outreach,recovered,7987.0,Recovered - stop
+P-00076,A-7988d1,10692.0,successful,,0,No action,not_required,0.0,No action
+P-00077,A-faa28c,46500.0,successful,,0,No action,not_required,0.0,No action
+P-00078,A-f25509,12736.0,successful,,0,No action,not_required,0.0,No action
+P-00079,A-3a5ad8,11216.0,failed,card_declined,1,Payment link,recovered,11216.0,Recovered - stop
+P-00080,A-65a46c,20960.0,successful,,0,No action,not_required,0.0,No action
+P-00081,A-8b25f2,8957.0,failed,insufficient_funds,1,Retry later,recovered,8957.0,Recovered - stop
+P-00082,A-adc1f3,2786.0,successful,,0,No action,not_required,0.0,No action
+P-00083,A-503d5a,5754.0,failed,network_error,2,Payment link,recovered,5754.0,Recovered - stop
+P-00084,A-186a44,7276.0,successful,,0,No action,not_required,0.0,No action
+P-00085,A-e888d1,5162.0,successful,,0,No action,not_required,0.0,No action
+P-00086,A-69fad4,3678.0,successful,,0,No action,not_required,0.0,No action
+P-00087,A-9289f6,11347.0,successful,,0,No action,not_required,0.0,No action
+P-00088,A-f19409,27767.0,successful,,0,No action,not_required,0.0,No action
+P-00089,A-2e3bad,40565.0,successful,,0,No action,not_required,0.0,No action
+P-00090,A-484819,11506.0,successful,,0,No action,not_required,0.0,No action
+P-00091,A-425e76,10743.0,successful,,0,No action,not_required,0.0,No action
+P-00092,A-e83938,5084.0,successful,,0,No action,not_required,0.0,No action
+P-00093,A-ad296b,15846.0,successful,,0,No action,not_required,0.0,No action
+P-00094,A-e51ec7,5569.0,failed,insufficient_funds,1,Retry later,recovered,5569.0,Recovered - stop
+P-00095,A-0aaf6e,2269.0,failed,bank_error,1,Smart retry,recovered,2269.0,Recovered - stop
+P-00096,A-e61e98,13484.0,successful,,0,No action,not_required,0.0,No action
+P-00097,A-92a333,10659.0,failed,card_declined,1,Payment link,recovered,10659.0,Recovered - stop
+P-00098,A-95b24a,25034.0,successful,,0,No action,not_required,0.0,No action
+P-00099,A-42e5e1,68.0,failed,insufficient_funds,2,Payment link,recovered,68.0,Recovered - stop
+P-00100,A-7d514c,19862.0,successful,,0,No action,not_required,0.0,No action
+P-00101,A-65aeb5,32430.0,successful,,0,No action,not_required,0.0,No action
+P-00102,A-e2cd1b,6761.0,failed,card_declined,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00103,A-180abf,17088.0,successful,,0,No action,not_required,0.0,No action
+P-00104,A-f17767,14179.0,successful,,0,No action,not_required,0.0,No action
+P-00105,A-5a184f,19980.0,successful,,0,No action,not_required,0.0,No action
+P-00106,A-7df7a7,18475.0,successful,,0,No action,not_required,0.0,No action
+P-00107,A-52dd88,14590.0,successful,,0,No action,not_required,0.0,No action
+P-00108,A-bece89,17388.0,successful,,0,No action,not_required,0.0,No action
+P-00109,A-029f69,10955.0,successful,,0,No action,not_required,0.0,No action
+P-00110,A-5c046d,24831.0,successful,,0,No action,not_required,0.0,No action
+P-00111,A-ae052e,3822.0,failed,expired_card,1,Payment link,recovered,3822.0,Recovered - stop
+P-00112,A-9f9299,25452.0,successful,,0,No action,not_required,0.0,No action
+P-00113,A-96e141,15183.0,failed,insufficient_funds,3,Final recovery attempt,recovered,15183.0,Recovered - stop
+P-00114,A-117171,0.0,successful,,0,No action,not_required,0.0,No action
+P-00115,A-313be3,16703.0,successful,,0,No action,not_required,0.0,No action
+P-00116,A-bbc346,9492.0,failed,card_declined,1,Priority customer outreach,recovered,9492.0,Recovered - stop
+P-00117,A-c16101,4826.0,successful,,0,No action,not_required,0.0,No action
+P-00118,A-50f3f7,17178.0,failed,expired_card,1,Payment link,recovered,17178.0,Recovered - stop
+P-00119,A-7da956,4164.0,successful,,0,No action,not_required,0.0,No action
+P-00120,A-019782,5169.0,successful,,0,No action,not_required,0.0,No action
+P-00121,A-df10db,9342.0,successful,,0,No action,not_required,0.0,No action
+P-00122,A-3932db,5358.0,successful,,0,No action,not_required,0.0,No action
+P-00123,A-4f18f0,12835.0,successful,,0,No action,not_required,0.0,No action
+P-00124,A-4c6f11,7586.0,successful,,0,No action,not_required,0.0,No action
+P-00125,A-8ae05d,4902.0,successful,,0,No action,not_required,0.0,No action
+P-00126,A-eafc6e,16229.0,failed,bank_error,1,Smart retry,recovered,16229.0,Recovered - stop
+P-00127,A-37f969,22959.0,successful,,0,No action,not_required,0.0,No action
+P-00128,A-10b8f2,28367.0,successful,,0,No action,not_required,0.0,No action
+P-00129,A-439b2f,522.0,failed,expired_card,2,Customer outreach,recovered,522.0,Recovered - stop
+P-00130,A-544d0a,17762.0,successful,,0,No action,not_required,0.0,No action
+P-00131,A-ba6516,21170.0,failed,card_declined,2,Customer outreach,recovered,21170.0,Recovered - stop
+P-00132,A-038089,2009.0,failed,expired_card,1,Payment link,recovered,2009.0,Recovered - stop
+P-00133,A-afa505,52080.0,successful,,0,No action,not_required,0.0,No action
+P-00134,A-d5a319,25907.0,successful,,0,No action,not_required,0.0,No action
+P-00135,A-f97b9a,20403.0,successful,,0,No action,not_required,0.0,No action
+P-00136,A-2f6a32,361.0,successful,,0,No action,not_required,0.0,No action
+P-00137,A-856b1e,6321.0,failed,card_declined,1,Payment link,recovered,6321.0,Recovered - stop
+P-00138,A-d27f50,13923.0,failed,network_error,1,Priority customer outreach,recovered,13923.0,Recovered - stop
+P-00139,A-e36807,4933.0,successful,,0,No action,not_required,0.0,No action
+P-00140,A-ff79f2,5295.0,successful,,0,No action,not_required,0.0,No action
+P-00141,A-5b1bcd,111617.0,successful,,0,No action,not_required,0.0,No action
+P-00142,A-71615e,26067.0,successful,,0,No action,not_required,0.0,No action
+P-00143,A-794a0b,10575.0,successful,,0,No action,not_required,0.0,No action
+P-00144,A-86902e,28629.0,successful,,0,No action,not_required,0.0,No action
+P-00145,A-0532a9,361.0,failed,insufficient_funds,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00146,A-9779ad,35760.0,successful,,0,No action,not_required,0.0,No action
+P-00147,A-f45426,4899.0,successful,,0,No action,not_required,0.0,No action
+P-00148,A-fa3095,61810.0,successful,,0,No action,not_required,0.0,No action
+P-00149,A-ad64c6,9136.0,successful,,0,No action,not_required,0.0,No action
+P-00150,A-39b19f,11655.0,successful,,0,No action,not_required,0.0,No action
+P-00151,A-56962b,22168.0,successful,,0,No action,not_required,0.0,No action
+P-00152,A-e60f9d,1421.0,successful,,0,No action,not_required,0.0,No action
+P-00153,A-158f4e,27572.0,successful,,0,No action,not_required,0.0,No action
+P-00154,A-5b051a,418.0,successful,,0,No action,not_required,0.0,No action
+P-00155,A-296d7c,1297.0,successful,,0,No action,not_required,0.0,No action
+P-00156,A-1619f8,11496.0,failed,insufficient_funds,1,Retry later,recovered,11496.0,Recovered - stop
+P-00157,A-a1b80b,34589.0,successful,,0,No action,not_required,0.0,No action
+P-00158,A-702032,5572.0,successful,,0,No action,not_required,0.0,No action
+P-00159,A-7a0d69,1330.0,failed,insufficient_funds,1,Retry later,recovered,1330.0,Recovered - stop
+P-00160,A-22d9d2,6252.0,successful,,0,No action,not_required,0.0,No action
+P-00161,A-b9eed8,5547.0,failed,insufficient_funds,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00162,A-dfbd31,7134.0,successful,,0,No action,not_required,0.0,No action
+P-00163,A-8e47ca,23145.0,successful,,0,No action,not_required,0.0,No action
+P-00164,A-4437e4,15869.0,successful,,0,No action,not_required,0.0,No action
+P-00165,A-779e4e,27150.0,successful,,0,No action,not_required,0.0,No action
+P-00166,A-53f4e3,5329.0,successful,,0,No action,not_required,0.0,No action
+P-00167,A-692f18,22798.0,successful,,0,No action,not_required,0.0,No action
+P-00168,A-13466a,8927.0,successful,,0,No action,not_required,0.0,No action
+P-00169,A-1986ca,27661.0,successful,,0,No action,not_required,0.0,No action
+P-00170,A-0cc442,31517.0,successful,,0,No action,not_required,0.0,No action
+P-00171,A-c608c8,6296.0,successful,,0,No action,not_required,0.0,No action
+P-00172,A-3be56b,14945.0,successful,,0,No action,not_required,0.0,No action
+P-00173,A-354f12,6965.0,successful,,0,No action,not_required,0.0,No action
+P-00174,A-68f37c,30678.0,failed,card_declined,3,Final recovery attempt,recovered,30678.0,Recovered - stop
+P-00175,A-aa9511,38842.0,successful,,0,No action,not_required,0.0,No action
+P-00176,A-af0cd2,5377.0,successful,,0,No action,not_required,0.0,No action
+P-00177,A-c222ab,9504.0,successful,,0,No action,not_required,0.0,No action
+P-00178,A-34d880,18394.0,successful,,0,No action,not_required,0.0,No action
+P-00179,A-508199,8436.0,successful,,0,No action,not_required,0.0,No action
+P-00180,A-f03140,15702.0,successful,,0,No action,not_required,0.0,No action
+P-00181,A-fa2041,10766.0,successful,,0,No action,not_required,0.0,No action
+P-00182,A-de58ca,23170.0,successful,,0,No action,not_required,0.0,No action
+P-00183,A-05d3b3,8373.0,successful,,0,No action,not_required,0.0,No action
+P-00184,A-249769,14727.0,successful,,0,No action,not_required,0.0,No action
+P-00185,A-e43bf7,37910.0,successful,,0,No action,not_required,0.0,No action
+P-00186,A-eb2fdc,20555.0,successful,,0,No action,not_required,0.0,No action
+P-00187,A-e1462e,11745.0,successful,,0,No action,not_required,0.0,No action
+P-00188,A-cab532,14243.0,failed,expired_card,1,Payment link,recovered,14243.0,Recovered - stop
+P-00189,A-9123ac,9179.0,successful,,0,No action,not_required,0.0,No action
+P-00190,A-6e08f3,12371.0,successful,,0,No action,not_required,0.0,No action
+P-00191,A-d922bf,15323.0,successful,,0,No action,not_required,0.0,No action
+P-00192,A-8ed5dd,11426.0,successful,,0,No action,not_required,0.0,No action
+P-00193,A-3c1a3f,7773.0,successful,,0,No action,not_required,0.0,No action
+P-00194,A-b2af2e,1091.0,failed,network_error,1,Smart retry,recovered,1091.0,Recovered - stop
+P-00195,A-9bfc9f,12745.0,successful,,0,No action,not_required,0.0,No action
+P-00196,A-4ae22a,7592.0,successful,,0,No action,not_required,0.0,No action
+P-00197,A-fda07f,7769.0,successful,,0,No action,not_required,0.0,No action
+P-00198,A-977ca0,29255.0,successful,,0,No action,not_required,0.0,No action
+P-00199,A-ab438f,0.0,failed,card_declined,1,Payment link,recovered,0.0,Recovered - stop
+P-00200,A-e89151,9867.0,successful,,0,No action,not_required,0.0,No action
+P-00201,A-40906c,30820.0,successful,,0,No action,not_required,0.0,No action
+P-00202,A-81edc3,14926.0,failed,expired_card,1,Payment link,recovered,14926.0,Recovered - stop
+P-00203,A-328bd0,12844.0,successful,,0,No action,not_required,0.0,No action
+P-00204,A-b3fe05,13333.0,successful,,0,No action,not_required,0.0,No action
+P-00205,A-09540c,17152.0,successful,,0,No action,not_required,0.0,No action
+P-00206,A-e693b6,19470.0,failed,expired_card,1,Payment link,recovered,19470.0,Recovered - stop
+P-00207,A-2446e3,13392.0,successful,,0,No action,not_required,0.0,No action
+P-00208,A-241e75,3499.0,failed,card_declined,1,Payment link,recovered,3499.0,Recovered - stop
+P-00209,A-922109,12516.0,successful,,0,No action,not_required,0.0,No action
+P-00210,A-ff3c73,3936.0,successful,,0,No action,not_required,0.0,No action
+P-00211,A-8b0451,779.0,successful,,0,No action,not_required,0.0,No action
+P-00212,A-331424,6567.0,successful,,0,No action,not_required,0.0,No action
+P-00213,A-51ec1b,5184.0,successful,,0,No action,not_required,0.0,No action
+P-00214,A-bcf664,7644.0,successful,,0,No action,not_required,0.0,No action
+P-00215,A-90a8c8,21667.0,successful,,0,No action,not_required,0.0,No action
+P-00216,A-86cdb4,0.0,successful,,0,No action,not_required,0.0,No action
+P-00217,A-dbc825,26595.0,successful,,0,No action,not_required,0.0,No action
+P-00218,A-7c4956,2801.0,successful,,0,No action,not_required,0.0,No action
+P-00219,A-3ce5b8,16650.0,successful,,0,No action,not_required,0.0,No action
+P-00220,A-bd4708,17242.0,successful,,0,No action,not_required,0.0,No action
+P-00221,A-993085,40098.0,successful,,0,No action,not_required,0.0,No action
+P-00222,A-92a3af,21350.0,successful,,0,No action,not_required,0.0,No action
+P-00223,A-151c9a,14250.0,successful,,0,No action,not_required,0.0,No action
+P-00224,A-474ad4,5757.0,successful,,0,No action,not_required,0.0,No action
+P-00225,A-4ef964,12584.0,successful,,0,No action,not_required,0.0,No action
+P-00226,A-fd9422,12644.0,successful,,0,No action,not_required,0.0,No action
+P-00227,A-0baac2,0.0,successful,,0,No action,not_required,0.0,No action
+P-00228,A-560d27,31176.0,failed,expired_card,1,Payment link,recovered,31176.0,Recovered - stop
+P-00229,A-2789e3,627.0,failed,card_declined,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00230,A-902ef7,20584.0,successful,,0,No action,not_required,0.0,No action
+P-00231,A-20736a,14850.0,failed,expired_card,1,Payment link,recovered,14850.0,Recovered - stop
+P-00232,A-cea1f0,1437.0,failed,insufficient_funds,1,Retry later,recovered,1437.0,Recovered - stop
+P-00233,A-ef84cf,7355.0,successful,,0,No action,not_required,0.0,No action
+P-00234,A-d49cc5,8700.0,successful,,0,No action,not_required,0.0,No action
+P-00235,A-67be94,13293.0,failed,card_declined,1,Payment link,recovered,13293.0,Recovered - stop
+P-00236,A-4e960a,23126.0,successful,,0,No action,not_required,0.0,No action
+P-00237,A-c37cab,7336.0,failed,expired_card,1,Payment link,recovered,7336.0,Recovered - stop
+P-00238,A-443b7c,14859.0,failed,insufficient_funds,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00239,A-1f7acb,46912.0,successful,,0,No action,not_required,0.0,No action
+P-00240,A-f51f16,13261.0,successful,,0,No action,not_required,0.0,No action
+P-00241,A-5a3eb9,15430.0,successful,,0,No action,not_required,0.0,No action
+P-00242,A-417d2f,13969.0,successful,,0,No action,not_required,0.0,No action
+P-00243,A-e98302,9421.0,successful,,0,No action,not_required,0.0,No action
+P-00244,A-bcf87c,3313.0,successful,,0,No action,not_required,0.0,No action
+P-00245,A-54ecc2,9601.0,successful,,0,No action,not_required,0.0,No action
+P-00246,A-625d0b,0.0,successful,,0,No action,not_required,0.0,No action
+P-00247,A-fce879,627.0,failed,card_declined,1,Payment link,recovered,627.0,Recovered - stop
+P-00248,A-6da850,11559.0,failed,insufficient_funds,1,Priority customer outreach,recovered,11559.0,Recovered - stop
+P-00249,A-342303,1695.0,successful,,0,No action,not_required,0.0,No action
+P-00250,A-e7a1e2,5174.0,successful,,0,No action,not_required,0.0,No action
+P-00251,A-f1f639,2919.0,successful,,0,No action,not_required,0.0,No action
+P-00252,A-a865bd,21022.0,successful,,0,No action,not_required,0.0,No action
+P-00253,A-4e631b,13174.0,failed,insufficient_funds,2,Payment link,recovered,13174.0,Recovered - stop
+P-00254,A-7f6b86,16342.0,successful,,0,No action,not_required,0.0,No action
+P-00255,A-8adedc,16985.0,successful,,0,No action,not_required,0.0,No action
+P-00256,A-2edab2,6851.0,successful,,0,No action,not_required,0.0,No action
+P-00257,A-a6d261,37944.0,successful,,0,No action,not_required,0.0,No action
+P-00258,A-202b67,12397.0,successful,,0,No action,not_required,0.0,No action
+P-00259,A-00bed1,33506.0,successful,,0,No action,not_required,0.0,No action
+P-00260,A-ffc04f,12630.0,successful,,0,No action,not_required,0.0,No action
+P-00261,A-65c341,18088.0,successful,,0,No action,not_required,0.0,No action
+P-00262,A-dcc2f0,12462.0,successful,,0,No action,not_required,0.0,No action
+P-00263,A-3d957b,9066.0,successful,,0,No action,not_required,0.0,No action
+P-00264,A-883b7d,28515.0,successful,,0,No action,not_required,0.0,No action
+P-00265,A-dcc3f1,7770.0,successful,,0,No action,not_required,0.0,No action
+P-00266,A-c62e55,9746.0,successful,,0,No action,not_required,0.0,No action
+P-00267,A-e40f45,11426.0,failed,insufficient_funds,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00268,A-96215d,8793.0,failed,insufficient_funds,1,Retry later,recovered,8793.0,Recovered - stop
+P-00269,A-2b9d3e,2637.0,successful,,0,No action,not_required,0.0,No action
+P-00270,A-b7724f,1322.0,successful,,0,No action,not_required,0.0,No action
+P-00271,A-eb1312,1225.0,successful,,0,No action,not_required,0.0,No action
+P-00272,A-df1e44,9267.0,failed,card_declined,1,Payment link,recovered,9267.0,Recovered - stop
+P-00273,A-a8d89d,23425.0,successful,,0,No action,not_required,0.0,No action
+P-00274,A-600734,13526.0,failed,card_declined,1,Payment link,recovered,13526.0,Recovered - stop
+P-00275,A-86fc1d,8316.0,successful,,0,No action,not_required,0.0,No action
+P-00276,A-acb7f7,31358.0,successful,,0,No action,not_required,0.0,No action
+P-00277,A-712f1c,30587.0,successful,,0,No action,not_required,0.0,No action
+P-00278,A-3793ee,16954.0,failed,card_declined,2,Customer outreach,recovered,16954.0,Recovered - stop
+P-00279,A-9a532a,8756.0,successful,,0,No action,not_required,0.0,No action
+P-00280,A-2ebb4b,26670.0,successful,,0,No action,not_required,0.0,No action
+P-00281,A-c9bb3e,9730.0,successful,,0,No action,not_required,0.0,No action
+P-00282,A-4814a3,4263.0,successful,,0,No action,not_required,0.0,No action
+P-00283,A-b7b7b7,17416.0,failed,insufficient_funds,2,Payment link,recovered,17416.0,Recovered - stop
+P-00284,A-ccc747,3381.0,successful,,0,No action,not_required,0.0,No action
+P-00285,A-bb3bd4,7015.0,failed,expired_card,1,Payment link,recovered,7015.0,Recovered - stop
+P-00286,A-09316c,29190.0,successful,,0,No action,not_required,0.0,No action
+P-00287,A-96bbc6,16630.0,successful,,0,No action,not_required,0.0,No action
+P-00288,A-bc4d48,4760.0,successful,,0,No action,not_required,0.0,No action
+P-00289,A-b30291,5130.0,successful,,0,No action,not_required,0.0,No action
+P-00290,A-cdf020,7615.0,successful,,0,No action,not_required,0.0,No action
+P-00291,A-e6afc1,22582.0,successful,,0,No action,not_required,0.0,No action
+P-00292,A-e3bd71,27773.0,successful,,0,No action,not_required,0.0,No action
+P-00293,A-098560,10770.0,successful,,0,No action,not_required,0.0,No action
+P-00294,A-82861f,24527.0,successful,,0,No action,not_required,0.0,No action
+P-00295,A-94c3cd,2668.0,successful,,0,No action,not_required,0.0,No action
+P-00296,A-a33200,7192.0,failed,insufficient_funds,1,Retry later,recovered,7192.0,Recovered - stop
+P-00297,A-034368,494.0,failed,insufficient_funds,2,Payment link,recovered,494.0,Recovered - stop
+P-00298,A-b54c01,0.0,failed,expired_card,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00299,A-d82ef9,11571.0,failed,card_declined,1,Priority customer outreach,recovered,11571.0,Recovered - stop
+P-00300,A-bb2f49,18301.0,successful,,0,No action,not_required,0.0,No action
+P-00301,A-1f559b,10160.0,failed,bank_error,1,Smart retry,recovered,10160.0,Recovered - stop
+P-00302,A-5a215a,114057.0,successful,,0,No action,not_required,0.0,No action
+P-00303,A-3f9cc0,19940.0,failed,expired_card,1,Payment link,recovered,19940.0,Recovered - stop
+P-00304,A-ed510f,33306.0,successful,,0,No action,not_required,0.0,No action
+P-00305,A-a7bd4b,6268.0,successful,,0,No action,not_required,0.0,No action
+P-00306,A-d4ac0e,9173.0,successful,,0,No action,not_required,0.0,No action
+P-00307,A-ffdfd5,6016.0,successful,,0,No action,not_required,0.0,No action
+P-00308,A-0dbdc6,14030.0,successful,,0,No action,not_required,0.0,No action
+P-00309,A-7cfe77,8073.0,failed,bank_error,1,Priority customer outreach,recovered,8073.0,Recovered - stop
+P-00310,A-1f0636,71820.0,successful,,0,No action,not_required,0.0,No action
+P-00311,A-40de06,22758.0,successful,,0,No action,not_required,0.0,No action
+P-00312,A-cb5333,22395.0,failed,card_declined,1,Priority customer outreach,recovered,22395.0,Recovered - stop
+P-00313,A-6e7827,5061.0,successful,,0,No action,not_required,0.0,No action
+P-00314,A-50bb9f,7403.0,successful,,0,No action,not_required,0.0,No action
+P-00315,A-5247b3,9259.0,successful,,0,No action,not_required,0.0,No action
+P-00316,A-f44180,11077.0,successful,,0,No action,not_required,0.0,No action
+P-00317,A-d42431,11321.0,successful,,0,No action,not_required,0.0,No action
+P-00318,A-0a62f5,3184.0,successful,,0,No action,not_required,0.0,No action
+P-00319,A-f5641b,13857.0,successful,,0,No action,not_required,0.0,No action
+P-00320,A-b44e3e,35561.0,failed,network_error,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00321,A-3b37d9,14858.0,successful,,0,No action,not_required,0.0,No action
+P-00322,A-54d94a,8075.0,successful,,0,No action,not_required,0.0,No action
+P-00323,A-7f29a7,779.0,successful,,0,No action,not_required,0.0,No action
+P-00324,A-089363,7164.0,successful,,0,No action,not_required,0.0,No action
+P-00325,A-855a48,30376.0,successful,,0,No action,not_required,0.0,No action
+P-00326,A-756192,18740.0,failed,network_error,1,Smart retry,recovered,18740.0,Recovered - stop
+P-00327,A-49b828,26391.0,failed,card_declined,1,Payment link,recovered,26391.0,Recovered - stop
+P-00328,A-c7ffc2,29211.0,successful,,0,No action,not_required,0.0,No action
+P-00329,A-751c58,10869.0,successful,,0,No action,not_required,0.0,No action
+P-00330,A-72799b,14326.0,successful,,0,No action,not_required,0.0,No action
+P-00331,A-812c5b,10110.0,successful,,0,No action,not_required,0.0,No action
+P-00332,A-69b156,12139.0,successful,,0,No action,not_required,0.0,No action
+P-00333,A-075038,18111.0,successful,,0,No action,not_required,0.0,No action
+P-00334,A-940b8b,9640.0,successful,,0,No action,not_required,0.0,No action
+P-00335,A-2d1036,46230.0,successful,,0,No action,not_required,0.0,No action
+P-00336,A-9affe6,9167.0,successful,,0,No action,not_required,0.0,No action
+P-00337,A-80eeb6,56928.0,successful,,0,No action,not_required,0.0,No action
+P-00338,A-c7e58b,5384.0,successful,,0,No action,not_required,0.0,No action
+P-00339,A-016043,4341.0,failed,card_declined,1,Payment link,recovered,4341.0,Recovered - stop
+P-00340,A-bbe56f,5607.0,failed,card_declined,2,Customer outreach,recovered,5607.0,Recovered - stop
+P-00341,A-7c5768,2382.0,successful,,0,No action,not_required,0.0,No action
+P-00342,A-751bd4,190.0,successful,,0,No action,not_required,0.0,No action
+P-00343,A-4e0e85,4544.0,successful,,0,No action,not_required,0.0,No action
+P-00344,A-ad3abd,11748.0,failed,insufficient_funds,1,Retry later,recovered,11748.0,Recovered - stop
+P-00345,A-e19ff6,1676.0,successful,,0,No action,not_required,0.0,No action
+P-00346,A-7920cc,34536.0,successful,,0,No action,not_required,0.0,No action
+P-00347,A-5a92e7,8744.0,failed,insufficient_funds,3,Recovery exhausted,failed,0.0,Escalate to human
+P-00348,A-fdfc91,20612.0,successful,,0,No action,not_required,0.0,No action
+P-00349,A-1e50e0,13295.0,failed,bank_error,1,Smart retry,recovered,13295.0,Recovered - stop
+P-00350,A-1e1b80,47697.0,successful,,0,No action,not_required,0.0,No action
+P-00351,A-659280,21127.0,failed,insufficient_funds,1,Retry later,recovered,21127.0,Recovered - stop
+P-00352,A-f6b2fb,21795.0,successful,,0,No action,not_required,0.0,No action
+P-00353,A-cb6cc6,1397.0,successful,,0,No action,not_required,0.0,No action
+P-00354,A-d62e02,1990.0,successful,,0,No action,not_required,0.0,No action
+P-00355,A-d535f6,2616.0,successful,,0,No action,not_required,0.0,No action
+P-00356,A-39868b,3753.0,successful,,0,No action,not_required,0.0,No action
+P-00357,A-3cc791,6758.0,successful,,0,No action,not_required,0.0,No action
+P-00358,A-337bc1,19379.0,successful,,0,No action,not_required,0.0,No action
+P-00359,A-58b9ff,20379.0,failed,insufficient_funds,1,Priority customer outreach,recovered,20379.0,Recovered - stop
+P-00360,A-1d5444,29782.0,successful,,0,No action,not_required,0.0,No action
+P-00361,A-0f3e88,4749.0,successful,,0,No action,not_required,0.0,No action
+P-00362,A-7641d3,11086.0,successful,,0,No action,not_required,0.0,No action
+P-00363,A-cd458b,16100.0,successful,,0,No action,not_required,0.0,No action
+P-00364,A-c16b88,10082.0,failed,card_declined,1,Payment link,recovered,10082.0,Recovered - stop
+P-00365,A-59f724,9431.0,failed,card_declined,1,Payment link,recovered,9431.0,Recovered - stop
+P-00366,A-87aa7b,13518.0,failed,insufficient_funds,1,Retry later,recovered,13518.0,Recovered - stop
+P-00367,A-1e6fc3,245.0,failed,expired_card,1,Payment link,recovered,245.0,Recovered - stop
+P-00368,A-34ea2f,1671.0,successful,,0,No action,not_required,0.0,No action
+P-00369,A-716841,7469.0,successful,,0,No action,not_required,0.0,No action
+P-00370,A-558c72,6048.0,successful,,0,No action,not_required,0.0,No action
+P-00371,A-b11cd0,4312.0,successful,,0,No action,not_required,0.0,No action
+P-00372,A-7f4db3,17722.0,successful,,0,No action,not_required,0.0,No action
+P-00373,A-cc102e,3718.0,successful,,0,No action,not_required,0.0,No action
+P-00374,A-dec005,19599.0,successful,,0,No action,not_required,0.0,No action
+P-00375,A-7c83a1,14511.0,successful,,0,No action,not_required,0.0,No action
+P-00376,A-297a2d,9000.0,failed,network_error,1,Smart retry,recovered,9000.0,Recovered - stop
+P-00377,A-4c56c9,20783.0,failed,network_error,1,Smart retry,recovered,20783.0,Recovered - stop
+P-00378,A-cbbe12,4361.0,successful,,0,No action,not_required,0.0,No action
+P-00379,A-4a267b,13671.0,successful,,0,No action,not_required,0.0,No action
+P-00380,A-bcbe98,6256.0,failed,expired_card,1,Payment link,recovered,6256.0,Recovered - stop
+P-00381,A-427b69,6056.0,successful,,0,No action,not_required,0.0,No action
+P-00382,A-054577,23577.0,successful,,0,No action,not_required,0.0,No action
+P-00383,A-bc87bc,342.0,successful,,0,No action,not_required,0.0,No action
+P-00384,A-e7beab,4982.0,successful,,0,No action,not_required,0.0,No action
+P-00385,A-a09355,6971.0,successful,,0,No action,not_required,0.0,No action
+P-00386,A-31ab9a,4459.0,successful,,0,No action,not_required,0.0,No action
+P-00387,A-0158bb,836.0,successful,,0,No action,not_required,0.0,No action
+P-00388,A-f19b24,1972.0,successful,,0,No action,not_required,0.0,No action
+P-00389,A-798a3f,10976.0,failed,insufficient_funds,1,Retry later,recovered,10976.0,Recovered - stop
+P-00390,A-42b791,1421.0,successful,,0,No action,not_required,0.0,No action
+P-00391,A-068fc6,19740.0,successful,,0,No action,not_required,0.0,No action
+P-00392,A-6f50ae,19046.0,successful,,0,No action,not_required,0.0,No action
+P-00393,A-a2485e,4370.0,successful,,0,No action,not_required,0.0,No action
+P-00394,A-bb1eaa,9156.0,successful,,0,No action,not_required,0.0,No action
+P-00395,A-cc98bc,19999.0,successful,,0,No action,not_required,0.0,No action
+P-00396,A-d77f4c,42455.0,successful,,0,No action,not_required,0.0,No action
+P-00397,A-ccabf0,22379.0,successful,,0,No action,not_required,0.0,No action
+P-00398,A-4a4c2d,29268.0,successful,,0,No action,not_required,0.0,No action
+P-00399,A-b7ef83,16186.0,failed,network_error,1,Smart retry,recovered,16186.0,Recovered - stop
+P-00400,A-e08cd3,3283.0,successful,,0,No action,not_required,0.0,No action
+P-00401,A-19b2c8,22723.0,successful,,0,No action,not_required,0.0,No action
+P-00402,A-970c97,11830.0,successful,,0,No action,not_required,0.0,No action
+P-00403,A-6dee43,22770.0,successful,,0,No action,not_required,0.0,No action
+P-00404,A-5ed98d,11904.0,successful,,0,No action,not_required,0.0,No action
+P-00405,A-c58f49,15260.0,successful,,0,No action,not_required,0.0,No action
+P-00406,A-9c18c4,11853.0,failed,network_error,1,Smart retry,recovered,11853.0,Recovered - stop
+P-00407,A-cc8c8f,6009.0,successful,,0,No action,not_required,0.0,No action
+P-00408,A-5f7781,4796.0,successful,,0,No action,not_required,0.0,No action
+P-00409,A-e1b9cd,24402.0,successful,,0,No action,not_required,0.0,No action
+P-00410,A-ac85cd,4611.0,successful,,0,No action,not_required,0.0,No action
+P-00411,A-d792a6,10019.0,successful,,0,No action,not_required,0.0,No action
+P-00412,A-ac9111,14483.0,successful,,0,No action,not_required,0.0,No action
+P-00413,A-9f0b68,15629.0,successful,,0,No action,not_required,0.0,No action
+P-00414,A-ccb686,17921.0,failed,insufficient_funds,1,Retry later,recovered,17921.0,Recovered - stop
+P-00415,A-0e966d,5632.0,successful,,0,No action,not_required,0.0,No action
+P-00416,A-b9f5b1,4087.0,successful,,0,No action,not_required,0.0,No action
+P-00417,A-8ae3fc,3896.0,successful,,0,No action,not_required,0.0,No action
+P-00418,A-55f257,12137.0,failed,expired_card,3,Final recovery attempt,recovered,12137.0,Recovered - stop
+P-00419,A-712533,9268.0,successful,,0,No action,not_required,0.0,No action
+P-00420,A-781cc0,10426.0,successful,,0,No action,not_required,0.0,No action

@@ -1,0 +1,39 @@
+2026-09-04T16:51:08.724Z INFO Is remote: false
+2026-09-04T16:51:08.731Z INFO Starting Local. Installation path: c:\Users\krupa\OneDrive\Desktop\abc
+2026-09-04T16:51:08.734Z INFO [MainProvider] Creating new MainProvider instance...
+2026-09-04T16:51:08.737Z INFO [TabsManager] Code view listener set up at initialization
+2026-09-04T16:51:08.750Z INFO Installation path exists: c:\Users\krupa\OneDrive\Desktop\abc
+2026-09-04T16:51:08.753Z INFO Initializing database with URL: file:c:\Users\krupa\OneDrive\Desktop\abc\pythagora-core\data\database\pythagora.db
+2026-09-04T16:51:08.767Z INFO Database file exists, skipping prisma generate/push for faster startup
+2026-09-04T16:51:08.770Z INFO Database initialized successfully
+2026-09-04T16:51:08.774Z INFO [Migration] Checking for database migration...
+2026-09-04T16:51:08.998Z INFO [Migration] No migration needed
+2026-09-04T16:51:15.406Z INFO Closing entire Pythagora extension...
+2026-09-04T16:51:15.409Z ERROR Error closing extension
+Error: Canceled
+Stack: Canceled: Canceled
+	at new rS (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:435:152801)
+	at i._remoteCall (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:435:158885)
+	at r.<computed>.s.charCodeAt.r.<computed> (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:435:155638)
+	at uf._doExecuteCommand (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:542:48319)
+	at uf.executeCommand (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:542:47766)
+	at Object.executeCommand (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:672:139141)
+	at closeEntirePythagoraExtension (c:\Users\krupa\.vscode\extensions\pythagoratechnologies.pythagora-vs-code-2.6.19\out\extension.js:542:31)
+	at Object.deactivate (c:\Users\krupa\.vscode\extensions\pythagoratechnologies.pythagora-vs-code-2.6.19\out\extension.js:409:15)
+	at FR._deactivate (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:546:14930)
+	at file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:546:12457
+	at Array.map (<anonymous>)
+	at FR._deactivateAll (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:546:12445)
+	at FR.terminate (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:546:12796)
+	at i.terminate (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:548:1072)
+	at ma (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:851:11797)
+	at Np.value (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:851:9939)
+	at T._deliver (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:431:3617)
+	at T.fire (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:431:3935)
+	at ys.fire (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:433:8627)
+	at MessagePortMain.<anonymous> (file:///c:/Users/krupa/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:851:8171)
+	at MessagePortMain.emit (node:events:509:28)
+	at Object.emit (node:electron/js2c/utility_init:2:2934)
+Extra context: {
+  "message": "Canceled"
+}

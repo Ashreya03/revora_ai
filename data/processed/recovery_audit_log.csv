@@ -1,0 +1,152 @@
+payment_id,account_id,attempt_number,action,result,amount,churn_probability,failure_reason
+P-00005,A-a0ca4e,1,Retry later,recovered,10920.0,0.2347,insufficient_funds
+P-00006,A-e5d6ab,1,Smart retry,recovered,10815.0,0.0845,network_error
+P-00009,A-592832,1,Smart retry,failed,12605.0,0.4782,network_error
+P-00009,A-592832,2,Payment link,recovered,12605.0,0.4782,network_error
+P-00011,A-462d45,1,Retry later,recovered,17282.0,0.3657,insufficient_funds
+P-00012,A-ac14bb,1,Payment link,recovered,27347.0,0.2147,card_declined
+P-00017,A-c42f1f,1,Retry later,failed,539.0,0.6515,insufficient_funds
+P-00017,A-c42f1f,2,Payment link,recovered,539.0,0.6515,insufficient_funds
+P-00018,A-4e44e8,1,Payment link,failed,1874.0,0.8038,card_declined
+P-00018,A-4e44e8,2,Customer outreach,recovered,1874.0,0.8038,card_declined
+P-00020,A-32fb14,1,Payment link,recovered,3601.0,0.2412,card_declined
+P-00022,A-35083d,1,Payment link,recovered,20820.0,0.2102,expired_card
+P-00023,A-eb7fac,1,Retry later,recovered,41259.0,0.2005,insufficient_funds
+P-00028,A-bad8c1,1,Payment link,recovered,7797.0,0.0369,expired_card
+P-00030,A-f446b6,1,Payment link,failed,11392.0,0.1546,card_declined
+P-00030,A-f446b6,2,Customer outreach,failed,11392.0,0.1546,card_declined
+P-00030,A-f446b6,3,Final recovery attempt,failed,11392.0,0.1546,card_declined
+P-00031,A-a45270,1,Priority customer outreach,recovered,16601.0,0.6573,network_error
+P-00037,A-2d4502,1,Smart retry,recovered,15481.0,0.2544,network_error
+P-00043,A-02fac6,1,Retry later,failed,20954.0,0.1169,insufficient_funds
+P-00043,A-02fac6,2,Payment link,failed,20954.0,0.1169,insufficient_funds
+P-00043,A-02fac6,3,Final recovery attempt,failed,20954.0,0.1169,insufficient_funds
+P-00044,A-c1dfe1,1,Payment link,recovered,25296.0,0.2135,card_declined
+P-00046,A-4c38bc,1,Smart retry,recovered,29520.0,0.391,bank_error
+P-00048,A-6f8ad2,1,Payment link,recovered,20619.0,0.4552,card_declined
+P-00049,A-4d1e75,1,Smart retry,recovered,13698.0,0.349,bank_error
+P-00050,A-9ee962,1,Smart retry,failed,9249.0,0.1382,network_error
+P-00050,A-9ee962,2,Payment link,failed,9249.0,0.1382,network_error
+P-00050,A-9ee962,3,Final recovery attempt,recovered,9249.0,0.1382,network_error
+P-00053,A-e351e1,1,Smart retry,recovered,627.0,0.446,bank_error
+P-00057,A-f92792,1,Payment link,failed,17262.0,0.4637,card_declined
+P-00057,A-f92792,2,Customer outreach,failed,17262.0,0.4637,card_declined
+P-00057,A-f92792,3,Final recovery attempt,failed,17262.0,0.4637,card_declined
+P-00058,A-84ebe4,1,Smart retry,failed,20830.0,0.0503,network_error
+P-00058,A-84ebe4,2,Payment link,recovered,20830.0,0.0503,network_error
+P-00061,A-a8b49c,1,Payment link,recovered,6846.0,0.194,card_declined
+P-00067,A-9208f0,1,Smart retry,recovered,3413.0,0.2106,bank_error
+P-00074,A-91e948,1,Retry later,failed,13735.0,0.0279,insufficient_funds
+P-00074,A-91e948,2,Payment link,failed,13735.0,0.0279,insufficient_funds
+P-00074,A-91e948,3,Final recovery attempt,recovered,13735.0,0.0279,insufficient_funds
+P-00075,A-104f1a,1,Payment link,failed,7987.0,0.3949,expired_card
+P-00075,A-104f1a,2,Customer outreach,recovered,7987.0,0.3949,expired_card
+P-00079,A-3a5ad8,1,Payment link,recovered,11216.0,0.3429,card_declined
+P-00081,A-8b25f2,1,Retry later,recovered,8957.0,0.2873,insufficient_funds
+P-00083,A-503d5a,1,Smart retry,failed,5754.0,0.5803,network_error
+P-00083,A-503d5a,2,Payment link,recovered,5754.0,0.5803,network_error
+P-00094,A-e51ec7,1,Retry later,recovered,5569.0,0.4252,insufficient_funds
+P-00095,A-0aaf6e,1,Smart retry,recovered,2269.0,0.6113,bank_error
+P-00097,A-92a333,1,Payment link,recovered,10659.0,0.1662,card_declined
+P-00099,A-42e5e1,1,Retry later,failed,68.0,0.604,insufficient_funds
+P-00099,A-42e5e1,2,Payment link,recovered,68.0,0.604,insufficient_funds
+P-00102,A-e2cd1b,1,Payment link,failed,6761.0,0.5187,card_declined
+P-00102,A-e2cd1b,2,Customer outreach,failed,6761.0,0.5187,card_declined
+P-00102,A-e2cd1b,3,Final recovery attempt,failed,6761.0,0.5187,card_declined
+P-00111,A-ae052e,1,Payment link,recovered,3822.0,0.2208,expired_card
+P-00113,A-96e141,1,Retry later,failed,15183.0,0.1869,insufficient_funds
+P-00113,A-96e141,2,Payment link,failed,15183.0,0.1869,insufficient_funds
+P-00113,A-96e141,3,Final recovery attempt,recovered,15183.0,0.1869,insufficient_funds
+P-00116,A-bbc346,1,Priority customer outreach,recovered,9492.0,0.744,card_declined
+P-00118,A-50f3f7,1,Payment link,recovered,17178.0,0.3365,expired_card
+P-00126,A-eafc6e,1,Smart retry,recovered,16229.0,0.1134,bank_error
+P-00129,A-439b2f,1,Payment link,failed,522.0,0.3359,expired_card
+P-00129,A-439b2f,2,Customer outreach,recovered,522.0,0.3359,expired_card
+P-00131,A-ba6516,1,Payment link,failed,21170.0,0.422,card_declined
+P-00131,A-ba6516,2,Customer outreach,recovered,21170.0,0.422,card_declined
+P-00132,A-038089,1,Payment link,recovered,2009.0,0.3314,expired_card
+P-00137,A-856b1e,1,Payment link,recovered,6321.0,0.124,card_declined
+P-00138,A-d27f50,1,Priority customer outreach,recovered,13923.0,0.6207,network_error
+P-00145,A-0532a9,1,Retry later,failed,361.0,0.7742,insufficient_funds
+P-00145,A-0532a9,2,Payment link,failed,361.0,0.7742,insufficient_funds
+P-00145,A-0532a9,3,Final recovery attempt,failed,361.0,0.7742,insufficient_funds
+P-00156,A-1619f8,1,Retry later,recovered,11496.0,0.2843,insufficient_funds
+P-00159,A-7a0d69,1,Retry later,recovered,1330.0,0.5172,insufficient_funds
+P-00161,A-b9eed8,1,Retry later,failed,5547.0,0.3247,insufficient_funds
+P-00161,A-b9eed8,2,Payment link,failed,5547.0,0.3247,insufficient_funds
+P-00161,A-b9eed8,3,Final recovery attempt,failed,5547.0,0.3247,insufficient_funds
+P-00174,A-68f37c,1,Payment link,failed,30678.0,0.1285,card_declined
+P-00174,A-68f37c,2,Customer outreach,failed,30678.0,0.1285,card_declined
+P-00174,A-68f37c,3,Final recovery attempt,recovered,30678.0,0.1285,card_declined
+P-00188,A-cab532,1,Payment link,recovered,14243.0,0.2658,expired_card
+P-00194,A-b2af2e,1,Smart retry,recovered,1091.0,0.4118,network_error
+P-00199,A-ab438f,1,Payment link,recovered,0.0,0.5352,card_declined
+P-00202,A-81edc3,1,Payment link,recovered,14926.0,0.257,expired_card
+P-00206,A-e693b6,1,Payment link,recovered,19470.0,0.2021,expired_card
+P-00208,A-241e75,1,Payment link,recovered,3499.0,0.4751,card_declined
+P-00228,A-560d27,1,Payment link,recovered,31176.0,0.3539,expired_card
+P-00229,A-2789e3,1,Payment link,failed,627.0,0.6848,card_declined
+P-00229,A-2789e3,2,Customer outreach,failed,627.0,0.6848,card_declined
+P-00229,A-2789e3,3,Final recovery attempt,failed,627.0,0.6848,card_declined
+P-00231,A-20736a,1,Payment link,recovered,14850.0,0.3709,expired_card
+P-00232,A-cea1f0,1,Retry later,recovered,1437.0,0.5084,insufficient_funds
+P-00235,A-67be94,1,Payment link,recovered,13293.0,0.0813,card_declined
+P-00237,A-c37cab,1,Payment link,recovered,7336.0,0.6064,expired_card
+P-00238,A-443b7c,1,Priority customer outreach,failed,14859.0,0.654,insufficient_funds
+P-00238,A-443b7c,2,Payment link,failed,14859.0,0.654,insufficient_funds
+P-00238,A-443b7c,3,Final recovery attempt,failed,14859.0,0.654,insufficient_funds
+P-00247,A-fce879,1,Payment link,recovered,627.0,0.3885,card_declined
+P-00248,A-6da850,1,Priority customer outreach,recovered,11559.0,0.5342,insufficient_funds
+P-00253,A-4e631b,1,Retry later,failed,13174.0,0.4035,insufficient_funds
+P-00253,A-4e631b,2,Payment link,recovered,13174.0,0.4035,insufficient_funds
+P-00267,A-e40f45,1,Retry later,failed,11426.0,0.3658,insufficient_funds
+P-00267,A-e40f45,2,Payment link,failed,11426.0,0.3658,insufficient_funds
+P-00267,A-e40f45,3,Final recovery attempt,failed,11426.0,0.3658,insufficient_funds
+P-00268,A-96215d,1,Retry later,recovered,8793.0,0.4323,insufficient_funds
+P-00272,A-df1e44,1,Payment link,recovered,9267.0,0.3632,card_declined
+P-00274,A-600734,1,Payment link,recovered,13526.0,0.3286,card_declined
+P-00278,A-3793ee,1,Payment link,failed,16954.0,0.0984,card_declined
+P-00278,A-3793ee,2,Customer outreach,recovered,16954.0,0.0984,card_declined
+P-00283,A-b7b7b7,1,Retry later,failed,17416.0,0.2315,insufficient_funds
+P-00283,A-b7b7b7,2,Payment link,recovered,17416.0,0.2315,insufficient_funds
+P-00285,A-bb3bd4,1,Payment link,recovered,7015.0,0.3066,expired_card
+P-00296,A-a33200,1,Retry later,recovered,7192.0,0.4302,insufficient_funds
+P-00297,A-034368,1,Retry later,failed,494.0,0.2323,insufficient_funds
+P-00297,A-034368,2,Payment link,recovered,494.0,0.2323,insufficient_funds
+P-00298,A-b54c01,1,Payment link,failed,0.0,0.6276,expired_card
+P-00298,A-b54c01,2,Customer outreach,failed,0.0,0.6276,expired_card
+P-00298,A-b54c01,3,Final recovery attempt,failed,0.0,0.6276,expired_card
+P-00299,A-d82ef9,1,Priority customer outreach,recovered,11571.0,0.5438,card_declined
+P-00301,A-1f559b,1,Smart retry,recovered,10160.0,0.2432,bank_error
+P-00303,A-3f9cc0,1,Payment link,recovered,19940.0,0.2648,expired_card
+P-00309,A-7cfe77,1,Priority customer outreach,recovered,8073.0,0.5591,bank_error
+P-00312,A-cb5333,1,Priority customer outreach,recovered,22395.0,0.6576,card_declined
+P-00320,A-b44e3e,1,Smart retry,failed,35561.0,0.118,network_error
+P-00320,A-b44e3e,2,Payment link,failed,35561.0,0.118,network_error
+P-00320,A-b44e3e,3,Final recovery attempt,failed,35561.0,0.118,network_error
+P-00326,A-756192,1,Smart retry,recovered,18740.0,0.1929,network_error
+P-00327,A-49b828,1,Payment link,recovered,26391.0,0.2266,card_declined
+P-00339,A-016043,1,Payment link,recovered,4341.0,0.196,card_declined
+P-00340,A-bbe56f,1,Payment link,failed,5607.0,0.1302,card_declined
+P-00340,A-bbe56f,2,Customer outreach,recovered,5607.0,0.1302,card_declined
+P-00344,A-ad3abd,1,Retry later,recovered,11748.0,0.079,insufficient_funds
+P-00347,A-5a92e7,1,Priority customer outreach,failed,8744.0,0.7224,insufficient_funds
+P-00347,A-5a92e7,2,Payment link,failed,8744.0,0.7224,insufficient_funds
+P-00347,A-5a92e7,3,Final recovery attempt,failed,8744.0,0.7224,insufficient_funds
+P-00349,A-1e50e0,1,Smart retry,recovered,13295.0,0.0257,bank_error
+P-00351,A-659280,1,Retry later,recovered,21127.0,0.3127,insufficient_funds
+P-00359,A-58b9ff,1,Priority customer outreach,recovered,20379.0,0.7171,insufficient_funds
+P-00364,A-c16b88,1,Payment link,recovered,10082.0,0.4026,card_declined
+P-00365,A-59f724,1,Payment link,recovered,9431.0,0.3742,card_declined
+P-00366,A-87aa7b,1,Retry later,recovered,13518.0,0.4152,insufficient_funds
+P-00367,A-1e6fc3,1,Payment link,recovered,245.0,0.2346,expired_card
+P-00376,A-297a2d,1,Smart retry,recovered,9000.0,0.1649,network_error
+P-00377,A-4c56c9,1,Smart retry,recovered,20783.0,0.4049,network_error
+P-00380,A-bcbe98,1,Payment link,recovered,6256.0,0.7318,expired_card
+P-00389,A-798a3f,1,Retry later,recovered,10976.0,0.3134,insufficient_funds
+P-00399,A-b7ef83,1,Smart retry,recovered,16186.0,0.4017,network_error
+P-00406,A-9c18c4,1,Smart retry,recovered,11853.0,0.2069,network_error
+P-00414,A-ccb686,1,Retry later,recovered,17921.0,0.3002,insufficient_funds
+P-00418,A-55f257,1,Payment link,failed,12137.0,0.1445,expired_card
+P-00418,A-55f257,2,Customer outreach,failed,12137.0,0.1445,expired_card
+P-00418,A-55f257,3,Final recovery attempt,recovered,12137.0,0.1445,expired_card
