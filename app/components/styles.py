@@ -1,350 +1,403 @@
 import streamlit as st
 
 
-# ============================================================
-# REVORA AI COLORS
-# ============================================================
-
-COLORS = {
-    "bg": "#0F0B1A",
-    "surface": "#1C1730",
-    "surface_alt": "#241E3D",
-    "border": "#332B52",
-
-    "primary": "#8B5CF6",
-    "primary_light": "#A78BFA",
-
-    "accent_pink": "#EC4899",
-    "accent_green": "#34D399",
-
-    "text_primary": "#F5F3FF",
-    "text_secondary": "#9D94BF",
-
-    "success": "#34D399",
-    "warning": "#FBBF24",
-    "danger": "#F87171",
-}
-
-
-# ============================================================
+# =========================================================
 # PRIORITY COLORS
-# ============================================================
+# =========================================================
 
 PRIORITY_COLORS = {
-    "High": COLORS["danger"],
-    "Medium": COLORS["warning"],
-    "Low": COLORS["success"],
+    "High": "#F87171",
+    "Medium": "#FBBF24",
+    "Low": "#34D399",
 }
 
 
-# ============================================================
+# =========================================================
 # GLOBAL STYLES
-# ============================================================
+# =========================================================
 
 def inject_global_styles():
 
     st.markdown(
-        f"""
+        """
         <style>
 
-        /* ====================================================
-           MAIN APP
-        ==================================================== */
+        /* =================================================
+           THEME VARIABLES
+        ================================================= */
 
-        .stApp {{
-            background-color: {COLORS["bg"]};
-            color: {COLORS["text_primary"]};
-        }}
+        :root {
+            --revora-primary: var(--st-primary-color);
+            --revora-bg: var(--st-background-color);
+            --revora-surface: var(--st-secondary-background-color);
+            --revora-text: var(--st-text-color);
+            --revora-border: var(--st-border-color);
 
-        .block-container {{
-            padding-top: 2.5rem;
-            padding-bottom: 3rem;
-            max-width: 1450px;
-        }}
+            --revora-purple: #8B5CF6;
+            --revora-purple-light: #A78BFA;
+            --revora-pink: #EC4899;
+
+            --revora-green: #34D399;
+            --revora-warning: #FBBF24;
+            --revora-danger: #F87171;
+        }
 
 
-        /* ====================================================
+        /* =================================================
+           MAIN APPLICATION
+        ================================================= */
+
+        .stApp {
+            background: var(--revora-bg);
+            color: var(--revora-text);
+        }
+
+        .main {
+            color: var(--revora-text);
+        }
+
+        /* Make normal Streamlit text theme-aware */
+
+        p,
+        span,
+        label,
+        li {
+            color: var(--revora-text);
+        }
+
+
+        /* =================================================
+           HEADINGS
+        ================================================= */
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--revora-text) !important;
+        }
+
+
+        /* =================================================
            SIDEBAR
-        ==================================================== */
+        ================================================= */
 
-        [data-testid="stSidebar"] {{
-            background-color: {COLORS["surface"]};
-            border-right: 1px solid {COLORS["border"]};
-        }}
+        section[data-testid="stSidebar"] {
+            background: var(--revora-surface);
+            border-right: 1px solid var(--revora-border);
+        }
 
-        [data-testid="stSidebar"] * {{
-            color: {COLORS["text_primary"]};
-        }}
-
-
-        /* ====================================================
-           SIDEBAR BRAND
-        ==================================================== */
-
-        [data-testid="stSidebar"]::before {{
-            content: "Revora AI";
-            display: block;
-
-            padding: 18px 20px 4px 20px;
-
-            font-size: 22px;
-            font-weight: 800;
-
-            letter-spacing: -0.04em;
-
-            color: {COLORS["text_primary"]};
-        }}
-
-        [data-testid="stSidebar"]::after {{
-            content: "Revenue Recovery Intelligence";
-
-            display: block;
-
-            padding: 0 20px 18px 20px;
-
-            font-size: 11px;
-
-            color: {COLORS["text_secondary"]};
-
-            letter-spacing: 0.01em;
-        }}
+        section[data-testid="stSidebar"] p,
+        section[data-testid="stSidebar"] span,
+        section[data-testid="stSidebar"] label,
+        section[data-testid="stSidebar"] div {
+            color: var(--revora-text);
+        }
 
 
-        /* ====================================================
-           TOP BRAND
-        ==================================================== */
+        /* =================================================
+           REVORA BRAND
+        ================================================= */
 
-        .topbar {{
-            display: flex;
-            align-items: center;
+        .revora-brand {
+            padding: 10px 4px 24px 4px;
+        }
 
-            padding: 4px 4px 20px 4px;
-        }}
+        .revora-logo {
+            width: 42px;
+            height: 42px;
 
-        .brand-container {{
-            display: flex;
-            align-items: center;
-
-            gap: 13px;
-        }}
-
-        .brand-logo {{
-            width: 44px;
-            height: 44px;
+            border-radius: 12px;
 
             display: flex;
             align-items: center;
             justify-content: center;
 
-            border-radius: 14px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #8B5CF6 0%,
-                    #EC4899 100%
-                );
-
-            color: white;
-
-            position: relative;
-
-            box-shadow:
-                0 8px 26px rgba(139, 92, 246, 0.30);
-        }}
-
-        .brand-logo::before {{
-            content: "R";
-
-            font-size: 24px;
-            font-weight: 900;
-
-            color: white;
-
-            line-height: 1;
-        }}
-
-        .brand-logo::after {{
-            content: "";
-
-            position: absolute;
-
-            width: 7px;
-            height: 7px;
-
-            border-radius: 50%;
-
-            background: white;
-
-            right: 7px;
-            top: 7px;
-
-            box-shadow:
-                0 0 0 3px rgba(255,255,255,0.15);
-        }}
-
-
-        /* ====================================================
-           BRAND TEXT
-        ==================================================== */
-
-        .topbar-brand {{
-            font-size: 24px;
-
-            font-weight: 800;
-
-            letter-spacing: -0.045em;
-
-            color: {COLORS["text_primary"]};
-        }}
-
-        .topbar-brand .brand-highlight {{
-            color: {COLORS["primary_light"]};
-        }}
-
-        .brand-tagline {{
-            font-size: 11px;
-
-            color: {COLORS["text_secondary"]};
-
-            margin-top: 2px;
-        }}
-
-
-        /* ====================================================
-           KPI CARDS
-        ==================================================== */
-
-        .kpi-card {{
             background: linear-gradient(
-                145deg,
-                {COLORS["surface_alt"]} 0%,
-                {COLORS["surface"]} 100%
+                135deg,
+                #8B5CF6,
+                #EC4899
             );
 
-            border: 1px solid {COLORS["border"]};
+            color: #FFFFFF !important;
 
-            border-radius: 20px;
+            font-size: 22px;
+            font-weight: 800;
+        }
 
-            padding: 22px 24px;
-
-            min-height: 125px;
-
-            box-shadow:
-                0 8px 30px rgba(0, 0, 0, 0.18);
-
-            transition:
-                transform 0.2s ease,
-                border-color 0.2s ease;
-        }}
-
-        .kpi-card:hover {{
-            transform: translateY(-2px);
-
-            border-color: {COLORS["primary"]};
-        }}
-
-        .kpi-label {{
-            color: {COLORS["text_secondary"]};
-
-            font-size: 12px;
-
-            font-weight: 700;
-
-            text-transform: uppercase;
-
-            letter-spacing: 0.08em;
-
-            margin-bottom: 10px;
-        }}
-
-        .kpi-value {{
-            color: {COLORS["text_primary"]};
-
-            font-size: 30px;
-
+        .revora-title {
+            font-size: 21px;
             font-weight: 800;
 
-            line-height: 1.15;
-        }}
+            color: var(--revora-text) !important;
+        }
 
-        .kpi-sub {{
-            color: {COLORS["text_secondary"]};
-
+        .revora-subtitle {
             font-size: 12px;
 
-            margin-top: 7px;
-        }}
+            color: var(--revora-text) !important;
+
+            opacity: 0.65;
+        }
 
 
-        /* ====================================================
-           HEADINGS
-        ==================================================== */
+        /* =================================================
+           KPI CARDS
+        ================================================= */
 
-        h1 {{
-            font-weight: 800 !important;
+        .kpi-card {
+            background: var(--revora-surface);
 
-            letter-spacing: -0.03em;
-        }}
+            border: 1px solid var(--revora-border);
 
-        h2,
-        h3 {{
-            font-weight: 700 !important;
+            border-radius: 16px;
 
-            letter-spacing: -0.02em;
-        }}
+            padding: 20px;
+
+            min-height: 120px;
+
+            box-shadow:
+                0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .kpi-label {
+            font-size: 13px;
+            font-weight: 600;
+
+            color: var(--revora-text) !important;
+
+            opacity: 0.65;
+
+            margin-bottom: 8px;
+        }
+
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+
+            color: var(--revora-text) !important;
+        }
+
+        .kpi-sub {
+            font-size: 12px;
+
+            color: var(--revora-text) !important;
+
+            opacity: 0.6;
+
+            margin-top: 6px;
+        }
 
 
-        /* ====================================================
-           TABLE
-        ==================================================== */
+        /* =================================================
+           GENERAL CARDS
+        ================================================= */
 
-        [data-testid="stDataFrame"] {{
-            border-radius: 18px;
+        .card {
+            background: var(--revora-surface);
 
-            overflow: hidden;
+            border: 1px solid var(--revora-border);
 
-            border: 1px solid {COLORS["border"]};
-        }}
+            border-radius: 16px;
 
+            padding: 20px;
 
-        /* ====================================================
-           DIVIDERS
-        ==================================================== */
-
-        hr {{
-            border-color: {COLORS["border"]};
-        }}
+            color: var(--revora-text);
+        }
 
 
-        /* ====================================================
-           INPUTS
-        ==================================================== */
+        /* =================================================
+           DATAFRAMES
+        ================================================= */
 
-        [data-baseweb="input"],
-        [data-baseweb="select"] {{
+        [data-testid="stDataFrame"] {
+            border: 1px solid var(--revora-border);
+
             border-radius: 12px;
-        }}
+        }
 
 
-        /* ====================================================
+        /* =================================================
            BUTTONS
-        ==================================================== */
+        ================================================= */
 
-        .stButton > button {{
-            border-radius: 12px;
+        .stButton > button {
+            border-radius: 10px;
 
             font-weight: 600;
-        }}
+
+            color: var(--revora-text);
+        }
 
 
-        /* ====================================================
-           CHAT
-        ==================================================== */
+        /* =================================================
+           TEXT INPUTS
+        ================================================= */
 
-        [data-testid="stChatMessage"] {{
-            border-radius: 16px;
-        }}
+        input,
+        textarea {
+            color: var(--revora-text) !important;
+
+            background-color: var(--revora-surface) !important;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: var(--revora-text) !important;
+
+            opacity: 0.5;
+        }
+
+
+        /* =================================================
+           SELECTBOX / MULTISELECT
+        ================================================= */
+
+        [data-baseweb="select"] {
+            color: var(--revora-text) !important;
+        }
+
+        [data-baseweb="select"] * {
+            color: var(--revora-text) !important;
+        }
+
+
+        /* =================================================
+           CHAT MESSAGES
+        ================================================= */
+
+        [data-testid="stChatMessage"] {
+            color: var(--revora-text);
+        }
+
+        [data-testid="stChatMessage"] p,
+        [data-testid="stChatMessage"] span,
+        [data-testid="stChatMessage"] li {
+            color: var(--revora-text) !important;
+        }
+
+
+        /* =================================================
+           CHAT INPUT
+        ================================================= */
+
+        [data-testid="stChatInput"] {
+            background: var(--revora-surface);
+        }
+
+        [data-testid="stChatInput"] textarea {
+            color: var(--revora-text) !important;
+        }
+
+
+        /* =================================================
+           ALERTS / INFO / SUCCESS / WARNING
+        ================================================= */
+
+        [data-testid="stAlert"] {
+            color: var(--revora-text);
+        }
+
+        [data-testid="stAlert"] p,
+        [data-testid="stAlert"] span {
+            color: inherit;
+        }
+
+
+        /* =================================================
+           METRICS
+        ================================================= */
+
+        [data-testid="stMetricLabel"] {
+            color: var(--revora-text) !important;
+
+            opacity: 0.7;
+        }
+
+        [data-testid="stMetricValue"] {
+            color: var(--revora-text) !important;
+        }
+
+        [data-testid="stMetricDelta"] {
+            color: var(--revora-text) !important;
+        }
+
+
+        /* =================================================
+           LINKS
+        ================================================= */
+
+        a {
+            color: var(--st-link-color, var(--revora-primary)) !important;
+        }
+
+
+        /* =================================================
+           DIVIDERS
+        ================================================= */
+
+        hr {
+            border-color: var(--revora-border);
+        }
+
+
+        /* =================================================
+           CODE
+        ================================================= */
+
+        code {
+            color: var(--st-code-text-color, var(--revora-text));
+        }
+
+
+        /* =================================================
+           EXPANDERS
+        ================================================= */
+
+        [data-testid="stExpander"] {
+            background: var(--revora-surface);
+
+            border: 1px solid var(--revora-border);
+
+            border-radius: 12px;
+        }
+
+
+        /* =================================================
+           TABS
+        ================================================= */
+
+        button[data-baseweb="tab"] {
+            color: var(--revora-text) !important;
+        }
+
+
+        /* =================================================
+           FILE UPLOADERS
+        ================================================= */
+
+        [data-testid="stFileUploader"] {
+            color: var(--revora-text);
+        }
+
+
+        /* =================================================
+           MOBILE
+        ================================================= */
+
+        @media (max-width: 768px) {
+
+            .kpi-card {
+                padding: 16px;
+            }
+
+            .kpi-value {
+                font-size: 24px;
+            }
+
+        }
 
         </style>
         """,
@@ -352,36 +405,37 @@ def inject_global_styles():
     )
 
 
-# ============================================================
-# OPTIONAL TOP BAR
-# ============================================================
+# =========================================================
+# TOP BAR
+# =========================================================
 
-def render_topbar(title: str = "Dashboard"):
+def render_topbar():
 
     st.markdown(
         """
-        <div class="topbar">
-
-            <div class="brand-container">
-
-                <div class="brand-logo">
-                    R
+        <div style="
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:8px 0 20px 0;
+        ">
+            <div>
+                <div style="
+                    font-size:24px;
+                    font-weight:800;
+                    color:var(--st-text-color);
+                ">
+                    Revora AI
                 </div>
 
-                <div>
-
-                    <div class="topbar-brand">
-                        Rev<span class="brand-highlight">ora AI</span>
-                    </div>
-
-                    <div class="brand-tagline">
-                        Revenue Recovery Intelligence
-                    </div>
-
+                <div style="
+                    font-size:12px;
+                    color:var(--st-text-color);
+                    opacity:0.65;
+                ">
+                    Revenue Recovery Intelligence
                 </div>
-
             </div>
-
         </div>
         """,
         unsafe_allow_html=True,
